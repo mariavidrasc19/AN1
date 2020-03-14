@@ -1,0 +1,24 @@
+Coechipieri: Betina-Cristina Rosu 324CA, Maria Vidrasc 314CA
+Metodele implementate de noi sunt :
+
+-std::vector<std::vector<int>> AEGraph::possible_double_cuts() :
+Este similara cu functia get_paths_to din schelet
+doar ca la fiecare nod se verifica daca are doar un fiu
+subgraf si nici un atom.
+
+-AEGraph AEGraph::double_cut(std::vector<int> where) :
+Elimina dublu-negarile stergand nodul care are doar
+un subgraf-cupil si nici un atom-copil.
+
+-std::vector<std::vector<int>> AEGraph::possible_erasures(int level) :
+Path va fi matricea ce contiine drumurile catre nodurile ce pot fi sterse.
+
+-AEGraph AEGraph::erase(std::vector<int> where) :
+Sterge atomul/subgraful daca acesta poate fi sters.
+
+-std::vector<std::vector<int>> AEGraph::possible_deiterations() :
+Returneaza in matricea path toate drumurile
+ce duc la deiterari posibile.
+
+AEGraph AEGraph::deiterate(std::vector<int> where) :
+Deitereaza atomii/subgrafurile daca acesta pot fi sterse.
